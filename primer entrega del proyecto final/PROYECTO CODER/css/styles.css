@@ -1,0 +1,106 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+
+}
+.encabezado{
+    background-color:hsl(290, 13%, 57%) ;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-weight: 30%;
+}
+.encabezado-img{
+    width: 10%;
+}
+
+nav {
+  display: inline-block; 
+  width: 80%;
+}
+.titulo{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(104, 74, 131);
+}
+
+.navbar{
+    list-style: none;
+    text-align: center;
+ }
+ 
+.navbar li{
+    display: inline-block;
+
+}
+
+nav ul li a {
+    background-color:hsl(273, 28%, 39%);
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+
+}
+ .galeria{
+    display: inline;
+    margin-left: 20%;
+ }
+ 
+ .galeria2{
+    margin-left: 20%;
+ }
+
+ .galeria3{
+    margin-left: 20%;
+ }
+ .galeria4{
+    margin-left: 20%; 
+ }
+ 
+ .pie-de-pagina{
+    background-color:hsl(290, 13%, 57%);
+
+}
+.bi-instagram {
+    color: rgb(255, 255, 255);  
+    font-size: 25px; 
+ }
+
+ .bi-whatsapp{
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+}
+
+ .bi-cart2{
+    color: rgb(254, 254, 254);
+    font-size: 40px; 
+    margin-left: 1470px;
+ }
+
+ .contenedor-index{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 30vh 10vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+header{
+    grid-area:header;
+    background-color: aqua;
+}
+
+main{
+  grid-area:main;
+}
+
+footer{
+  grid-area:footer;
+}

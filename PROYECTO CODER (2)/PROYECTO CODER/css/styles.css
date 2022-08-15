@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+
+}
+
+.contenedor-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer"
+    ;
+}
+
+header{
+  grid-area: header;
+  background-color: hsl(290, 13%, 57%);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-weight: 30%;
+}
+
+nav ul li a {
+    background-color:hsl(273, 28%, 39%);
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+ 
+.navbar{
+    list-style: none;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+
+.galeria{
+    display: inline;
+    margin-left: 10%;
+ }
+
+ section{
+    grid-area: section;
+    background-color: rgb(253, 253, 253);
+ }
+
+ footer{
+    grid-area: footer;
+    background-color: hsl(290, 13%, 57%);
+ }
+
+ .bi-instagram {
+    color: rgb(255, 255, 255);  
+    font-size: 25px; 
+ }
+
+ .bi-whatsapp{
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+}
+
+@media screen and (max-widht:500px){
+    header{
+        background-color: hsl(0, 0%, 0%) ; 
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 10px; 
+    }
+    
+}

@@ -49,12 +49,13 @@ header{
 }
 
  
-.contenedor-galeria{
-    margin-top: 7%; 
-    margin-left: 9%;
- }
+.card{
+  margin: 10px;
+  margin-left: 6%;
+}
 
- .login{
+
+.login{
     margin-top: 7%;
     margin-left: 10%;
  }

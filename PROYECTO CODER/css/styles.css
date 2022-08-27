@@ -4,52 +4,77 @@
  padding: 0;
 
 }
-.encabezado{
-    background-color:hsl(288, 61%, 77%) ;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.6rem;
-    text-decoration: underline;
-    text-align: center;
-    color: rgb(64, 30, 76);
-    font-weight: 30%;
-}
-.encabezado-img{
-    width: 10%;
+
+.contenedor-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer"
+    ;
 }
 
-.carrito-img{
-    width: 5%;
+header{
+  grid-area: header;
+  background-color: hsl(290, 13%, 57%);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: hsl(282, 19%, 52%);
+  font-weight: 30%;
 }
 
-nav {
-  display: inline-block; 
-  width: 80%;
+
+.bg-propio{
+    background-color:hsl(0, 20%, 99%);
+    justify-content: center;
+    z-index: 99;  
 }
 
-.navbar{
-    list-style: none;
-    text-align: start;
+.nav-item a{
+  color:hsl(270, 50%, 99%)!important;
+  background-color: hsl(273, 28%, 39%);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.nav-item a:hover{
+  background-color: hsl(0, 2%, 8%);
+}
+
+ 
+.card{
+  margin: 10px;
+  margin-left: 6%;
+}
+
+
+.login{
+    margin-top: 7%;
+    margin-left: 10%;
  }
  
-.navbar li{
-    display: inline-block;
-
-}
-
-nav ul li a {
-    background-color: hsl(287, 27%, 37%);
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: rgb(255, 255, 255);
-    margin-left: 15px;
-    font-family: 'Quicksand', sans-serif;
-
-}
- .galeria{
-    display: inline;
-    margin-left: 30%;
+ section{
+    grid-area: section;
+    background-color: rgb(253, 253, 253);
  }
 
- .pie-de-pagina{
-    background-color:#bf85cf ;
+ footer{
+    grid-area: footer;
+    background-color: hsl(290, 13%, 57%);
+ }
+
+ .bi-instagram {
+    color: rgb(255, 255, 255);  
+    font-size: 25px; 
+ }
+
+ .bi-whatsapp{
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+}
+
+
 }

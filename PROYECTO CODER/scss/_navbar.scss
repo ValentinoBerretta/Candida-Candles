@@ -1,0 +1,16 @@
+.bg-propio{
+    background-color:hsl(0, 20%, 99%);
+    justify-content: center;
+    z-index: 99;  
+}
+
+.nav-item a{
+  color:hsl(270, 50%, 99%)!important;
+  background-color: hsl(273, 28%, 39%);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.nav-item a:hover{
+  background-color: hsl(0, 2%, 8%);
+}
